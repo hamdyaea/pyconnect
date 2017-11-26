@@ -2,6 +2,10 @@
 
 A Python3 software to test your internet connection  
 
+![Screenshot](screenshot.png)  
+
+
+
 ## What you need to make it work :
 
 This software is made for Python 3.  

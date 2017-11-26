@@ -1,5 +1,5 @@
 # Developer : Hamdy Abou El Anein
-from tkinter import * 
+from tkinter import *
 import os
 import urllib.request
 
