@@ -3,6 +3,9 @@ from tkinter import *
 #import urllib as url
 import os
 import urllib.request
+
+hostname = "google.com"
+
 class Application(Frame):
 	def __init__(self,parent):
 		Frame.__init__(self)
@@ -55,7 +58,7 @@ class Application(Frame):
 		self.ping.delete(1.0,END)
 		c = 3
 		while c != 0:
-			self.pingPacket = os.popen('ping -c 1 http://www.google.com').read()
+			self.pingPacket = os.popen("ping -c 1 "  + hostname).read()
 			self.ping.insert(END, self.pingPacket+'\n')
 			self.parent.after(1,self.parent.update())
 			c = c-1
