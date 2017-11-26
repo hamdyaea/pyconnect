@@ -1,7 +1,8 @@
 # Developer : Hamdy Abou El Anein
 from tkinter import * 
 import urllib as url
-import os 
+import os
+import urllib.request
 class Application(Frame):
 	def __init__(self,parent):
 		Frame.__init__(self)
@@ -39,7 +40,7 @@ class Application(Frame):
  
 	def checkInternet(self):
 		try:
-			url.urlopen('8.8.8.8')
+			urllib.request.urlopen('http://www.google.com')
 			self.etat.config(text='Connexion internet active')
 			self.checkPing()
 		except:
@@ -54,7 +55,7 @@ class Application(Frame):
 		self.ping.delete(1.0,END)
 		c = 3
 		while c != 0:
-			self.pingPacket = os.popen('ping -c 1 8.8.8.8').read()
+			self.pingPacket = os.popen('ping -c 1 http://www.google.com').read()
 			self.ping.insert(END, self.pingPacket+'\n')
 			self.parent.after(1,self.parent.update())
 			c = c-1
