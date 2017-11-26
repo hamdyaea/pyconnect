@@ -1,4 +1,4 @@
-# pyconnect
+# Pyconnect
 
 A Python3 software to test your internet connection  
 
@@ -25,6 +25,11 @@ Alternatively, you can grab the latest source code from GitHub :
 git clone git://github.com/shazow/urllib3.git  
 python setup.py install
 ```   
+## How to launch Pyconnect :  
+
+```sh
+python3 pyconnect.py
+```  
 
 ## Developer - Author
 
