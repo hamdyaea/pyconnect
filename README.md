@@ -1,3 +1,5 @@
+![Awesome](awesome.svg)    ![Python](python.png)
+
 # Pyconnect
 
 A Python3 software to test your internet connection  
